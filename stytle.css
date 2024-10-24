@@ -1,19 +1,40 @@
-body {
-    color: rgb(52, 35, 92);
+body { 
+    color: black; 
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+@media (max-width: 1400px) {
+    body { 
+        color: black; 
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+}
+
+nav a:visited {
+    color: blue;
+    background-color: black;
 }
 
 nav a:hover {
-    color: rgb(97, 163, 132);
+    color: green;
+    background-color: black;
+}
+
+nav a:link {
+    color: red;
 }
 
 input[type=text]:focus {
     outline: none;
-    border: 2px solid purple;
+    color: blue;
+    border: 2px solid rgb(0, 0, 225);
     border-radius: 1px;
 }
 
 input[type=checkbox]:checked {
-    accent-color: purple;
+    accent-color: blue;
 }
 
 input[type=checkbox]:checked + .checkbox-label {
@@ -21,5 +42,62 @@ input[type=checkbox]:checked + .checkbox-label {
   }
 
 button[type=submit]:disabled {
-    color: rgb(97, 163, 132)
+    color: rgb(180, 180, 255);
+}
+
+#galeria li {
+    list-style-type: square;
+}
+
+#galeria img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+
+#galeria li:nth-child(odd) {
+    background-color: yellow;
+}
+
+#galeria-div {
+    border: 1px dashed black;
+    border-radius: 20px
+}
+
+#galeria-cabecalho {
+    text-align: center;
+    color: red;
+    text-shadow: 3px 2px 2px grey;
+}
+
+#saiba-mais {
+    width: fit-content;
+    display: block;
+    margin: auto;
+    border: 1px solid grey;
+    border-radius: 8px;
+    padding: 6px;
+    color: black;
+    text-decoration: none;
+}
+
+#saiba-mais:active { 
+    box-shadow: inset 0 0 4px black;
+    font-size: 15px;
+}
+
+#explicacao-div p:first-child {
+    font-family: cursive;
+    color: red;
+}
+
+#explicacao-div p:last-child {
+    font-family: cursive;
+    color: yellow;
+    background-color: blue;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 3px 2px 2px red;
 }
