@@ -1,9 +1,5 @@
 ainda falta fazer:
 
-4 - Requisito CSS:
-Use a pseudoclasse :first-child para aplicar um estilo diferenciado ao primeiro parágrafo.
-Use a pseudoclasse :last-child para aplicar outro estilo ao último parágrafo.
-
 6. Evitar Estilo
 Crie dois parágrafos, um com a classe .important e outro sem classe.
 Requisito CSS: Aplique a pseudoclasse :not(.important) para estilizar apenas o parágrafo que não
