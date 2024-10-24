@@ -10,28 +10,52 @@
 <body>
     <header>
         <nav>
-            <a href=""></a>
-            <a href="#formulario">formulario</a>
-            <a href=""></a>
+            <ul>
+                <li><a href="#formulario">formulario</a></li>
+                <li><a href="#galeria-div">Galeria</a></li>
+                <li><a href="#explicacao-div">Explicação</a></li>
+            </ul>
+            
+            
+            
         </nav>
     </header>
 
     <form action="">
         <fieldset id="formulario">
-            <label for="nome">Nome: </label>
+            <legend>FORMULARIO DE CONTATO:</legend>
+            <label for="nome">Nome: </label> <br>
             <input type="text" name="nome" id="nome">
             <br>
-            <label for="email">E-mail: </label>
+            <label for="email">E-mail: </label> <br>
             <input type="text" name="email" id="email">
-            <br>
-            <label for="nome">Nome: </label>
-            <input type="text" name="nome" id="nome">
             <br>
             <input type="checkbox" id="check" name="check">
             <label class="checkbox-label" for="check">Deseja Receber atualizações pelo e-mail?</label>
-            <br>
+            <br> <br>
             <button type="submit" disabled>Enviar</button>
         </fieldset>
-    </form>
+    </form>    
+
+    <div id="galeria-div">
+        <h2 id="galeria-cabecalho">Galeria de fotos</h2>
+        <ul id="galeria">
+            <li><img src="https://i.pinimg.com/enabled_hi/564x/ce/61/be/ce61be129cde9cad420e422fb8626e66.jpg" alt="cereija: https://pin.it/7JJeWx3sg"></li>
+            <li><img src="https://i.pinimg.com/enabled_hi/564x/cd/1d/02/cd1d029a7a288bbef1b007c590fb2cbc.jpg" alt="limão: https://pin.it/46uaPms4S"></li>
+            <li><img src="https://i.pinimg.com/enabled_hi/564x/60/6b/72/606b728cf4b84803f6d48b6bba5cb686.jpg" alt="gato: https://pin.it/oB05CV3oO"></li>
+            <li><img src="https://i.pinimg.com/enabled_hi/564x/65/c5/98/65c598e1c23a16b495470d87c2822be2.jpg" alt="papel de parede: https://pin.it/5aqJBQAOq"></li>
+        </ul>
+    </div>
+    
+    <div id="explicacao-div">
+        <p><b>NAV: </b> é a tag HTML usada para separar um conjunto de links ou endereços que levam o usuário diretamente às partes mais importantes, do seu interesse ou resumem brevemente o conteúdo da página. Podem levar para outras páginas também.</p>
+        <p><b>Formulario: </b>um fieldset contendo 3 campos de input simulando um formulario de contato do usuario ou de assinatura. É pedido o nome do usuário, o e-mail e um checkbox perguntando se ele deve receber novas noticias em seu e-mail.</p>
+        <p><b>Galeria: </b>uma pequena galeria de fotos do pinterest (os links diretos para os pins estarão no atributo 'alt' de cada imagem respectivamente além de uma breve descrição de o que cada imagem mostra).</p>
+        <p id="easter-egg" style="display: none;">Explicação: um parágrafo simples que possui a função de explicar sobre sí mesmo (gostou da metalinguagem?)</p>
+    </div>
+
+    <hr>
+
+    <a id="saiba-mais" href="https://github.com/Migu3l-55" target="_blank">SAIBA MAIS</a>
 </body>
 </html>
